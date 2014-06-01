@@ -1,0 +1,11 @@
+A NanoBSD configuration for Soekris Engineering net6501/amd64.
+
+To build and write an image to a USB drive (e.g. da1):
+
+cd /root
+git clone https://github.com/pvalkone/nanobsd-sk6501.git
+cd nanobsd-sk6501
+ln -s `pwd`/SK6501 /usr/src/sys/amd64/conf/SK6501
+cd /usr/src/tools/tools/nanobsd
+sh nanobsd.sh -c /root/nanobsd-sk6501/sk6501.conf
+dd if=/usr/obj/nanobsd.sk6501/_.disk.full of=/dev/da1 bs=1m
