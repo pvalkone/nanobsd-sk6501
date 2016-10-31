@@ -1,4 +1,5 @@
-A NanoBSD configuration for Soekris Engineering net6501/amd64.
+A NanoBSD firewall/router configuration for Soekris Engineering
+net6501/amd64.
 
 To build and write an image to a USB drive (e.g. da1):
 
